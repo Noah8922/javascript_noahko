@@ -1,3 +1,4 @@
+//복합데이터 객체.
 let name = "apple";
 let color = "red";
 let display = "🍎";
