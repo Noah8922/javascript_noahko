@@ -14,7 +14,7 @@ console.log(string);
   /* <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String">MDN string</a>; */
 }
 
-// 템플릿 리터럴 (Template Literal)
+// `` : 템플릿 리터럴 (Template Literal)
 let id = "Noah";
 let greeting = "'안녕!, " + id + "🙌\n즐거운 하루 보내요!'";
 console.log(greeting);
