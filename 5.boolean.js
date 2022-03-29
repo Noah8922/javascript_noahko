@@ -1,4 +1,5 @@
 //불리언 타입
+//!!을 붙이면 값을 true 혹은 false 로 변환 할 수 있다.
 
 let 참 = true;
 let 거짓 = false;
