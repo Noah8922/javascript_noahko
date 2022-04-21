@@ -17,4 +17,4 @@ fruits[4] = "🍒";
 console.log(fruits);
 
 delete fruits[1];
-console.log(fruits);
+console.log(fruits); // [ '🍌', <1 empty item>, '🍇', '🍑', '🍒' ] 남아있음.
