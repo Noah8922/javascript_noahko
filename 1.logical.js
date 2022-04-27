@@ -56,9 +56,9 @@ console.log(obj2);
 // const price = item.price;
 // console.log(price); // Cannot read property 'price' of undefined
 
-let item; // = { price: 1 };
+let item = { price: 1 };
 const price = item && item.price;
-console.log(price); // undefined
+console.log(price); // 1
 
 // 기본값을 설정, 인자로 아무것도 주지 않았을 때
 function print(message) {
