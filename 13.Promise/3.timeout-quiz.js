@@ -13,7 +13,9 @@ function runInDelay(callback, seconds) {
 try {
   runInDelay(() => {
     console.log("타이머 완료");
-  }, -1);
-} catch (error) {}
+  }, 2);
+} catch (error) {
+  console.log(error);
+}
 
 //try catch로 에러가 발생해도 어플리케이션이 강제 종료 되지 않음.
