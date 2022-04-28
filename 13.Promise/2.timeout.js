@@ -6,9 +6,16 @@
 function execute() {
   console.log("1");
   setTimeout(() => {
+    // 브라우저와 노드에서 모두 제공하는 API
     console.log("2");
   }, 3000);
   console.log("3");
 }
 
 execute();
+
+/** setTimeout을 사용하면 어쨌든 후순위로 밀린다. 0초를 해도 제일 마지막에 출력된다.
+ * Call stack이 비어있을 때만 Task Queue에서 가져온다.
+ * 자바스크립트는 동기적으로 수행이 되지만, Web API를 통해서 비동기적으로 코드를 수행할 수 있다.
+ * 위의 코드를 예시로 들면, 콘솔로 1,3 찍는 쓰레드와 setTimeout으로 2를 찍는 쓰레드가 따로 돌아가고 있다.
+ */
