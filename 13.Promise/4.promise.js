@@ -3,6 +3,7 @@
 
 function runInDelay(seconds) {
   return new Promise((resolve, reject) => {
+    /** resolve와 reject라는 인자를 꼭 받아와여 함.  */
     if (!seconds || seconds < 0) {
       reject(new Error("seconds가 0보다 작음")); // error obj를 만듦
     }
