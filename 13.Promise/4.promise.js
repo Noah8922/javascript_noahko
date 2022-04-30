@@ -1,3 +1,4 @@
+// 콜백을 대체할 수 있는, 조금더 깔끔하게 작성 할 수 있는. Promise
 // callback 지옥이 되지 않도록, Callback이 중첩되지 않도록 깔끔하게 사용 할 수 있도록 도와줌.
 
 function runInDelay(seconds) {
