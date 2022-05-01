@@ -11,23 +11,23 @@ function fryEgg(egg) {
 }
 
 function getChicken() {
-  // return Promise.reject(new Error("치킨을 가져올수 없음!")); //reject가 되는 경우 catch를 꼭 써줘야 함.
-  return Promise.resolve(`🌲 => 🐓`);
+  return Promise.reject(new Error("치킨을 가져올수 없음!")); //reject가 되는 경우 catch를 꼭 써줘야 함.
+  // return Promise.resolve(`🌲 => 🐓`);
 }
 
 // fetchEgg("🐔") //
 //   .then((egg) => console.log(egg));
 
 getChicken()
-  .then((chicken) => {
-    return fetchEgg(chicken);
-  })
+  .then((chicken) => fetchEgg(chicken))
   .then((egg) => fryEgg(egg))
   .then((friedEgg) => console.log(friedEgg))
   .catch((error) => console.log(error.name));
 
-// getChicken()
-//   .catch(() => "🐔")
-//   .then(fetchEgg)
-//   .then(fryEgg)
-//   .then(console.log);
+getChicken()
+  .catch(() => "🐔")
+  .then(fetchEgg)
+  .then(fryEgg)
+  .then(console.log);
+
+/** 프로미스 여러개를 체이닝 할 수 있고, catch를 어디에 두냐에 따라서 의미있는 코딩을 할 수 있다. */
