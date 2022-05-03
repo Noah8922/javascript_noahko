@@ -30,7 +30,7 @@ console.log(decs);
 /** 오브젝트의 프로퍼티 디스크립터는 나중에 수정이 가능하다. */
 Object.defineProperty(dog, "name", {
   value: "멍멍",
-  writable: false, // 수정이 가능하게 하는지
+  writable: false, // 수정이 가능하게 하는지, 업데이트 될 수 있는지
   enumerable: false, // 밖에서 열거해서 볼 수 있게 하는지
   configurable: false, // 키 자체를 수정할 수 있게 하는지
 });
