@@ -39,6 +39,11 @@ const tiger1 = new Tiger("어흥", "🦁");
 tiger1.hunt();
 tiger1.printNmae();
 
+/** instanceof를 사용하면 어떤 프로토타입을 상속했는지 알 수 있다.  */
+console.log(dog1 instanceof Dog);
+console.log(dog1 instanceof Animal);
+console.log(dog1 instanceof Tiger);
+
 /** 생성자 함수를 쓰고
  * function Animal(name, emoji) {
   this.name = name;
