@@ -14,5 +14,5 @@ if (fruit === "apple") {
 }
 
 if (false) {
-  console.log("출력되면 안됨");
+  console.log("출력되면 안됨 이거 false");
 }
