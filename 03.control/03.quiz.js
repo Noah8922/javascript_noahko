@@ -4,11 +4,11 @@ let num = 2;
 
 //if
 if (num % 2 === 0) {
-  console.log("👍");
+  console.log("👍"); // 👍
 } else {
   console.log("💪");
 }
 
 //ternary
 let emoji = num % 2 === 0 ? "👍" : "💪";
-console.log(emoji);
+console.log(emoji); // 👍
